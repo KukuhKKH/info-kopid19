@@ -10,7 +10,7 @@
           >
             <div
               class="text-6xl font-bold text-orange-400 numeric"
-            >{{ (dtPonorogo.ponorogo) ? dtPonorogo.ponorogo.positif: '_' }}
+            >{{ (dtPonorogo.data.Kabupaten) ? dtPonorogo.data.Kabupaten.positif: '_' }}
             </div>
             <div class="text-xl text-gray-800">Positif</div>
           </div>
@@ -19,7 +19,7 @@
           >
             <div
               class="text-6xl font-bold text-green-400 numeric"
-            >{{ (dtPonorogo.ponorogo) ? dtPonorogo.ponorogo.sembuh: '_' }}
+            >{{ (dtPonorogo.data.Kabupaten) ? dtPonorogo.ponorogo.sembuh: '_' }}
             </div>
             <div class="text-xl">Sembuh</div>
           </div>
@@ -28,7 +28,7 @@
           >
             <div
               class="text-6xl font-bold text-red-400 numeric"
-            >{{ (dtPonorogo.ponorogo) ? dtPonorogo.ponorogo.meninggal: '_' }}
+            >{{ (dtPonorogo.data.Kabupaten) ? dtPonorogo.ponorogo.meninggal: '_' }}
             </div>
             <div class="text-xl">Meninggal</div>
           </div>
@@ -38,21 +38,21 @@
           <div class="rounded shadow lg:shadow-lg bg-white lg:w-1/2 mb-4 lg:mb-0 lg:mr-8 p-6">
             <div
               class="text-5xl font-semibold text-blue-400 numeric"
-            >{{ (dtPonorogo.ponorogo) ? dtPonorogo.ponorogo.odr: '_' }}
+            >{{ (dtPonorogo.data.Kabupaten) ? dtPonorogo.ponorogo.odr: '_' }}
             </div>
             <div class="text-xl">Orang Dalam Resiko (ODR)</div>
           </div>
           <div class="rounded shadow lg:shadow-lg bg-white lg:w-1/2 mb-4 lg:mb-0 lg:mr-8 p-6">
             <div
               class="text-5xl font-semibold text-blue-400 numeric"
-            >{{ (dtPonorogo.ponorogo) ? dtPonorogo.ponorogo.odp: '_' }}
+            >{{ (dtPonorogo.data.Kabupaten) ? dtPonorogo.data.Kabupaten.odp: '_' }}
             </div>
             <div class="text-xl">Orang Dalam Pemantauan (ODP)</div>
           </div>
           <div class="rounded shadow lg:shadow-lg bg-white lg:w-1/2 mb-4 lg:mb-0 lg:mr-8 p-6">
             <div
               class="text-5xl font-semibold text-blue-400 numeric"
-            >{{ (dtPonorogo.ponorogo) ? dtPonorogo.ponorogo.pdp: '_' }}
+            >{{ (dtPonorogo.data.Kabupaten) ? dtPonorogo.data.Kabupaten.pdp: '_' }}
             </div>
             <div class="text-xl">Pasien Dalam Pengawasan (PDP)</div>
           </div>
@@ -61,7 +61,7 @@
         <div class="lg:my-4 text-sm">
           <p
             class="font-mono"
-          >Pembaruan terakhir: {{(dtPonorogo.ponorogo) ? dtPonorogo.ponorogo.last_update: '_'}}</p>
+          >Pembaruan terakhir: {{(dtPonorogo.data) ? dtPonorogo.ponorogo.Last_Update: '_'}}</p>
           <p class="font-sans">
             Sumber:
             <span class="italic">Dinas Kesahatan Kabupaten Ponorogo</span>
@@ -204,7 +204,7 @@
       },
       async getDtPonorogo() {
         const response = await axios.get(
-          "http://info-kopid.kkh.id/api/ponorogo"
+          "http://back-info-kopid19.herokuapp.com/api/kecamatan"
         );
         this.dtPonorogo = response.data;
       }
