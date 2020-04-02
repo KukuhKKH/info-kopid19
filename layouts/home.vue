@@ -1,7 +1,7 @@
 <template>
   <div>
     <navigation/>
-    <div class="bg-gray-100 py-10 lg:py-16" style="min-height:75vh">
+    <div class="bg-gray-100 py-10 lg:py-16">
       <nuxt/>
     </div>
     <app-footer/>
