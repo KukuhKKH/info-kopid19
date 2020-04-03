@@ -204,7 +204,7 @@
       },
       async getDtPonorogo() {
         const response = await axios.get(
-          "http://info-kopid.kkh.id/api/ponorogo"
+          "https://back-info-kopid19.herokuapp.com/api/ponorogo"
         );
         this.dtPonorogo = response.data;
       }
