@@ -138,13 +138,13 @@
 
       </div>
 
-<!--      <h3 class="font-semibold text-2xl mt-10 mb-5">Peta Persebaran di Ponorogo</h3>-->
-<!--      <div class="list-article">-->
-<!--        <iframe-->
-<!--          style="width:100%;height:400px"-->
-<!--          src="https://fierce-caverns-85065.herokuapp.com/maps"-->
-<!--        ></iframe>-->
-<!--      </div>-->
+     <h3 class="font-semibold text-2xl mt-10 mb-5">Peta Persebaran di Ponorogo</h3>
+     <div class="list-article">
+       <iframe
+         style="width:100%;height:400px"
+         src="http://back-info-kopid19.herokuapp.com/maps-ponorogo"
+       ></iframe>
+     </div>
 
 <!--      <h3 class="font-semibold text-2xl mt-10 mb-5">Peta Persebaran di Indonesia</h3>-->
 <!--      <div class="list-article">-->
@@ -162,14 +162,12 @@
 <!--        ></iframe>-->
 <!--      </div>-->
 
-<!--      <div class="lg:my-4 text-sm">-->
-<!--        <p class="font-sans">-->
-<!--          *)Note:-->
-<!--          <span-->
-<!--            class="italic"-->
-<!--          >Titik dipeta merupakan titik kordinat desa atau wilayah,bukan merupakan tempat penderita/pasien</span>-->
-<!--        </p>-->
-<!--      </div>-->
+     <div class="lg:my-4 text-sm">
+       <p class="font-sans">
+         *)Note:
+         <span class="italic">Titik dipeta merupakan titik kordinat desa atau wilayah,bukan merupakan tempat penderita/pasien</span>
+       </p>
+     </div>
     </div>
   </div>
 </template>
